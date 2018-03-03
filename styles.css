@@ -1,0 +1,18 @@
+.articleTitle {
+  padding-left: 2vw;
+}
+.articleImg {
+  height: 20vh;
+  padding-left: 3vw;
+}
+.brief {
+  display: flex;
+  padding-right: 2vw;
+}
+.articleDesc {
+  width: 65vw;
+  padding-left: 3vw;
+}
+.article {
+  padding: 1vw;
+}

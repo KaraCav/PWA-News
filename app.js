@@ -11,15 +11,18 @@ async function updateNews() {
   );
 
   const json = await response.json();
-
   main.innerHTML = json.articles.map(createArticle).join('\n');
 
   function createArticle(article) {
     return `
     <div class="article">
-<h1>${article.title}</h1>
+    <div class="articleTitle">
+<h1>${article.title}</h1></div>
 <div class="brief">
-<p>${article.description}</p>
+<img class="articleImg" src='${article.urlToImage}'>
+
+<h2 class="articleDesc">${article.description}</h2>
+
 </div>
     </div>
     `;
